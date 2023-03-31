@@ -1,4 +1,4 @@
 package com.dhtl.btl_ptud.controller;
 
-public class MainController {
+public class CauHoiController {
 }
