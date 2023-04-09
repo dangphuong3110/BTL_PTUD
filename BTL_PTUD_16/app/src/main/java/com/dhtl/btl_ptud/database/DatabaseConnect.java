@@ -1,4 +1,4 @@
-package com.dhtl.btl_ptud.model.database;
+package com.dhtl.btl_ptud.database;
 
 import android.content.ContentValues;
 import android.content.Context;

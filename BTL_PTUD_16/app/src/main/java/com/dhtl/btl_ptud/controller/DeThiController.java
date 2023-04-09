@@ -3,10 +3,8 @@ package com.dhtl.btl_ptud.controller;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 
-import com.dhtl.btl_ptud.activity.MainActivity;
-import com.dhtl.btl_ptud.model.database.DatabaseConnect;
+import com.dhtl.btl_ptud.database.DatabaseConnect;
 
 import java.util.ArrayList;
 
