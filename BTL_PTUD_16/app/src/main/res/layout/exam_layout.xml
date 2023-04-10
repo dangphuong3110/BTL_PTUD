@@ -7,36 +7,39 @@
 
     <com.dhtl.btl_ptud.common.RippleView
         android:id="@+id/more"
-        app:rv_rippleDuration="200"
+        rv_centered="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/more2"
+        android:layout_height="72dp"
         android:layout_margin="5dp"
-        rv_centered="true">
+        android:layout_toLeftOf="@+id/more2"
+        app:rv_rippleDuration="200">
+
         <LinearLayout
-            android:layout_margin="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/custom_button">
+            android:layout_height="62dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/green_circle"
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/btnExam"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:id="@+id/btnExam"
-                android:background="#3D8941"
-                android:text="Đề 1"
-                android:textSize="20dp"
                 android:gravity="center"
-                android:textColor="#FFFFFF"/>
+                android:text="Đề 1"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
 
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_delete" />
+                android:src="@drawable/incorrect" />
         </LinearLayout>
     </com.dhtl.btl_ptud.common.RippleView>
 
