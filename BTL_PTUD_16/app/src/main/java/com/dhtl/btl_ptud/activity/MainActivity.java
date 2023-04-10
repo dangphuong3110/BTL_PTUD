@@ -15,7 +15,7 @@ import com.dhtl.btl_ptud.R;
 public class MainActivity extends AppCompatActivity {
     TableRow trBook, trTest, trGuide, trSuggest;
     ViewFlipper viewFlipper;
-   // AdView mAdView;
+    // AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +51,8 @@ public class MainActivity extends AppCompatActivity {
             trGuide.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setPackage("com.google.android.youtube");
-                    intent.setData(Uri.parse("https://www.youtube.com/watch?v=PXwVbtxh8P4"));
+                    String youtubeLink = "https://www.youtube.com/watch?v=PXwVbtxh8P4"; // Link YouTube cần mở
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(youtubeLink));
                     startActivity(intent);
                 }
             });
