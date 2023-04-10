@@ -83,9 +83,9 @@ public class MyAnswerAdapter extends RecyclerView.Adapter<MyAnswerAdapter.Recycl
         int a = list.indexOf(list.get(position)) + 1;
         holder.btnExam.setText("Câu " + a);
         if (list.get(position).getAnswer().replace(",", "").equals(list.get(position).getMyAnswer()))
-            holder.imageView.setImageDrawable(context.getDrawable(R.drawable.ic_check));
+            holder.imageView.setImageDrawable(context.getDrawable(R.drawable.correct));
         else
-            holder.imageView.setImageDrawable(context.getDrawable(R.drawable.ic_delete));
+            holder.imageView.setImageDrawable(context.getDrawable(R.drawable.incorrect));
     }
 
 }

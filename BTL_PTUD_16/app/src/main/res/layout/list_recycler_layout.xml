@@ -49,14 +49,14 @@
 
                 <ImageView
                     android:id="@+id/imgNextPage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="39dp"
+                    android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_search"
+                    android:src="@drawable/search"
                     tools:ignore="ContentDescription" />
             </RelativeLayout>
 

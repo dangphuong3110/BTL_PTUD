@@ -131,7 +131,7 @@ public class TestActivity extends AppCompatActivity {
                             LinearLayout.LayoutParams.MATCH_PARENT);
                     input.setLayoutParams(lp);
                     alertDialog.setView(input);
-                    alertDialog.setIcon(R.drawable.ic_search);
+                    alertDialog.setIcon(R.drawable.search);
                     alertDialog.setPositiveButton(getString(R.string.agree),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {

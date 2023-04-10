@@ -89,7 +89,7 @@ public class BookActivity extends AppCompatActivity {
                 input.setLayoutParams(params);
                 container.addView(input);
                 alertDialog.setView(container);
-                alertDialog.setIcon(R.drawable.ic_search_green);
+                alertDialog.setIcon(R.drawable.green_search);
 
 
                 alertDialog.setPositiveButton(getString(R.string.agree),
@@ -97,7 +97,7 @@ public class BookActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialog, int which) {
                                 if (!input.getText().toString().isEmpty()) {
                                     int page = Integer.parseInt(input.getText().toString());
-                                    if (page > listItem.size()) {
+                                    if (page > listItem.size() || page <= 0) {
                                         Toast.makeText(BookActivity.this, getResources().getString(R.string.noResuilt), Toast.LENGTH_SHORT).show();
                                     } else
                                         recyclerView.scrollToPosition(page - 1);

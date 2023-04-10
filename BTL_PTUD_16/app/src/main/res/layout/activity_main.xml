@@ -67,7 +67,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ic_notebook"/>
+                    android:background="@drawable/notebook"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -87,7 +87,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ic_test"/>
+                    android:background="@drawable/test"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -107,7 +107,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ic_help"/>
+                    android:background="@drawable/help"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -126,7 +126,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ic_motor_sports"/>
+                    android:background="@drawable/motobike"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
