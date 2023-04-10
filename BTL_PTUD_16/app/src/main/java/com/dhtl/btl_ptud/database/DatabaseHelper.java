@@ -15,8 +15,9 @@ import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    public static final String DBNAME = "lythuyetxemay150.sqlite";
-    public static final String DBLOCATION = "data/data/com.user.donghh.onthilaixe/databases/";
+    public static final String DBNAME = "database.sqlite";
+    public static final String DBLOCATION = "data/data/com.dhtl.btl_ptud/databases/";
+
     private Context mcontext;
     private SQLiteDatabase mDatabase;
 
