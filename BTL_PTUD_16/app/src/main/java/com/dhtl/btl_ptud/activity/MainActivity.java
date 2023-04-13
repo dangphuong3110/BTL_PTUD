@@ -15,18 +15,11 @@ import com.dhtl.btl_ptud.R;
 public class MainActivity extends AppCompatActivity {
     TableRow trBook, trTest, trGuide, trSuggest;
     ViewFlipper viewFlipper;
-    // AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        mAdView = findViewById(R.id.adView);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
-//        if (getSupportActionBar() != null) {
-//            this.getSupportActionBar().hide();
-//        }
         addControl();
         addEvent();
     }
@@ -38,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, BookActivity.class);
                     startActivity(intent);
-//                    overridePendingTransition(R.anim.from_right, R.anim.from_left);
                 }
             });
             trTest.setOnClickListener(new View.OnClickListener() {
@@ -75,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
             trTest = (TableRow) findViewById(R.id.trTest);
             trGuide = (TableRow) findViewById(R.id.trGuide);
             trSuggest = (TableRow) findViewById(R.id.trSuggest);
-
-//            viewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.in_from_right));
-//            viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.out_from_left));
             viewFlipper.setAutoStart(true);
             viewFlipper.setFlipInterval(4000);
         }catch(Exception e){

@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.dhtl.btl_ptud.R;
 import com.dhtl.btl_ptud.adapter.ExamAdapter;
@@ -24,6 +25,9 @@ public class ExamActivity extends AppCompatActivity {
     private ExamAdapter adapter;
     private GridLayoutManager lLayout;
     private Button btnSubmit;
+
+    private ImageView imgNextPage;
+
     public ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
 
     @Override
@@ -43,6 +47,9 @@ public class ExamActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);//mũi tên quay về
+
+        imgNextPage = (ImageView) findViewById(R.id.imgNextPage);
+        imgNextPage.setVisibility(View.INVISIBLE);
 
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSubmit.setVisibility(View.INVISIBLE);
