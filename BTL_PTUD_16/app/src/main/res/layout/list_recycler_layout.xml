@@ -60,15 +60,6 @@
                     tools:ignore="ContentDescription" />
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/txtCore"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/red"
-                android:textSize="20sp"
-                android:visibility="gone" />
-
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -79,6 +70,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtCore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/txtResuit"

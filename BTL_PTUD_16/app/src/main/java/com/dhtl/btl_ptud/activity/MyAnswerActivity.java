@@ -48,8 +48,9 @@ public class MyAnswerActivity extends AppCompatActivity {
                 i++;
 
         }
-        txtCore.setVisibility(View.VISIBLE);
+
         txtCore.setText(i + "/" + listItem.size());
+        txtCore.setVisibility(View.VISIBLE);
 
         if (i >= 16)
             txtResuit.setText(getResources().getString(R.string.pass));
