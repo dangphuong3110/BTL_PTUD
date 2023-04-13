@@ -3,6 +3,7 @@ package com.dhtl.btl_ptud.activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -26,6 +27,8 @@ public class MyAnswerActivity extends AppCompatActivity {
     private MyAnswerAdapter adapter;
     private GridLayoutManager lLayout;
     private Button btnSubmit;
+
+    private ImageView imgNextPage;
     ArrayList<Items> listItem;
     TextView txtCore, txtResuit;
     LinearLayout lnResult;
@@ -65,6 +68,10 @@ public class MyAnswerActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);//mũi tên quay về
 
         txtCore = (TextView) findViewById(R.id.txtCore);
+
+        imgNextPage = (ImageView) findViewById(R.id.imgNextPage);
+        imgNextPage.setVisibility(View.INVISIBLE);
+
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
         btnSubmit.setVisibility(View.INVISIBLE);
 

@@ -28,11 +28,11 @@
                 >
 
                 <TextView
-                    android:textColor="@color/white"
                     android:id="@+id/txtTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
                 <TextView
@@ -107,7 +107,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="@string/submit"
-            android:backgroundTint="@color/colorGreen"/>
+            android:backgroundTint="@color/colorGreen"
+            android:textColor="#FFF"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

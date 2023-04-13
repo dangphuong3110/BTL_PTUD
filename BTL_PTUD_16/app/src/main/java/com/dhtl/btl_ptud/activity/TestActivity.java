@@ -72,9 +72,9 @@ public class TestActivity extends AppCompatActivity {
             if (false == database.exists()) {
                 mDBHelper.getReadableDatabase();
                 if (copyDatabase(this)) {
-//                    Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show();
                 }
-//                    Toast.makeText(this, "error", Toast.LENGTH_LONG).show();
+                    Toast.makeText(this, "error", Toast.LENGTH_LONG).show();
             }
             listItem = mDBHelper.getList20Items(id);
             adapter = new TestAdapter(listItem, this);
